@@ -2,17 +2,17 @@
 {
     internal class Program
     {
-        public static void AddBonusPages(int pages) //q5
+        public static void ApplyDiscount(double[] prices) //q6
         {
-            pages += 50;
+            prices[0] -= 5;
         }
         static void Main(string[] args)
         {
-            //Question 5:
-            int pages = 400;
-            AddBonusPages(pages);
-            Console.WriteLine(pages);
-            //it outputs 400 bec pages are value type so it just takes a copy of the main value
+            //Question 6:
+            double[] pricess = { 25.5, 40.0 };
+            ApplyDiscount(pricess);
+            Console.WriteLine(pricess[0]);
+            //it outputs 20.5 bec. array is reference type so it edits in the main value
             Console.WriteLine();
 
             //--------------------------------
