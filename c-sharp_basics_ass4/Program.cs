@@ -2,21 +2,15 @@
 {
     internal class Program
     {
-        public static bool TryGetPrice(string title, out double price) //q9
+        public static void PrintBookInfo(string title, int pages = 300) //q10
         {
-            if (title == "Clean Code")
-            {
-                price = 25.5;
-                return true;
-            }
-            price = 0.0;
-            return false;
+            Console.WriteLine($"Title: {title}");
+            Console.WriteLine($"Pages: {pages}");
         }
         static void Main(string[] args)
         {
-            //Question 9:
-            bool found = TryGetPrice("Clean Code", out double price);
-            Console.WriteLine(found ? price : 0.0);
+            //Question 10:
+            PrintBookInfo("Clean Code");
             Console.WriteLine();
 
             //--------------------------------
