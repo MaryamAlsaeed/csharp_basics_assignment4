@@ -2,19 +2,17 @@
 {
     internal class Program
     {
-        public static void AddBonusPagesByRef(ref int pages) //q7
+        public static void ReplaceArray(ref double[] prices) //q8
         {
-            pages += 50;
+            prices = new double[] { 10.0, 12.5, 15.0 };
         }
         static void Main(string[] args)
         {
-            //Question 7:
-            int pages03 = 400;
-            AddBonusPagesByRef(ref pages03);
-            Console.WriteLine(pages03);
-            //it adds 50 on the value bec we passed by reference so it edits the address it self
+            //Question 8:
+            double[] prices11 = { 25.5, 40.0 };
+            ReplaceArray(ref prices11);
+            Console.WriteLine(prices11.Length);
             Console.WriteLine();
-
             //--------------------------------
         }
     }
