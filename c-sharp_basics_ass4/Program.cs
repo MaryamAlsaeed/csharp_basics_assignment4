@@ -2,17 +2,17 @@
 {
     internal class Program
     {
-        public static void ApplyDiscount(double[] prices) //q6
+        public static void AddBonusPagesByRef(ref int pages) //q7
         {
-            prices[0] -= 5;
+            pages += 50;
         }
         static void Main(string[] args)
         {
-            //Question 6:
-            double[] pricess = { 25.5, 40.0 };
-            ApplyDiscount(pricess);
-            Console.WriteLine(pricess[0]);
-            //it outputs 20.5 bec. array is reference type so it edits in the main value
+            //Question 7:
+            int pages03 = 400;
+            AddBonusPagesByRef(ref pages03);
+            Console.WriteLine(pages03);
+            //it adds 50 on the value bec we passed by reference so it edits the address it self
             Console.WriteLine();
 
             //--------------------------------
