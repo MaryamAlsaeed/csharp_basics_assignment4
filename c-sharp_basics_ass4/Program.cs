@@ -2,15 +2,17 @@
 {
     internal class Program
     {
-        public static void PrintBookInfo(string title, int pages = 300) //q10
+        public static void PrintAllTitles(params string[] titles) //q12
         {
-            Console.WriteLine($"Title: {title}");
-            Console.WriteLine($"Pages: {pages}");
+            foreach (var title in titles)
+            {
+                Console.WriteLine(title);
+            }
         }
         static void Main(string[] args)
         {
-            //Question 11:
-            PrintBookInfo("Clean Code", 550);
+            //Question 12:
+            PrintAllTitles("Clean Code", "The Pragmatic Programmer", "Design Patterns");
             Console.WriteLine();
 
             //--------------------------------
