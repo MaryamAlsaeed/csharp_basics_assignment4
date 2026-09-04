@@ -2,15 +2,14 @@
 {
     internal class Program
     {
+        public static void PrintWelcomeMessage() //q3
+        {
+            Console.WriteLine("Welcome to the Library!");
+        }
         static void Main(string[] args)
         {
-            //Question 2:
-            int[,] shelfCopies =
-            {
-                {3, 5 },
-                {1, 4},
-            };
-            Console.WriteLine(shelfCopies[1, 0]);
+            //Question 3:
+            PrintWelcomeMessage();
             Console.WriteLine();
 
             //--------------------------------
