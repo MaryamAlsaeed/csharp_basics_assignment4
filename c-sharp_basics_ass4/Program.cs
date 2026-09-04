@@ -9,8 +9,8 @@
         }
         static void Main(string[] args)
         {
-            //Question 10:
-            PrintBookInfo("Clean Code");
+            //Question 11:
+            PrintBookInfo("Clean Code", 550);
             Console.WriteLine();
 
             //--------------------------------
